@@ -25,20 +25,25 @@
             }
         </script>
         <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+        <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
         <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
         <script src="//unpkg.com/docsify-copy-code"></script>
-        <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
-        <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <!-- <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+        <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script> -->
+
         <script>
-            const gitalk = new Gitalk({
-                clientID: 'Iv1.fe9d1fd8bb03a01a',
-                clientSecret: 'e8c9abaea1ffd30344923983e467e61a93f6a9cf',
-                repo: 'https://github.com/dearDairui/page/issues',
-                owner: 'dairui',
-                admin: ['deardairui'],
-                // facebook-like distraction free mode
-                distractionFreeMode: false
-            })
+            // if (typeof navigator.serviceWorker !== 'undefined') {
+            //     navigator.serviceWorker.register('sw.js')
+            // }
+            // const gitalk = new Gitalk({
+            //     clientID: 'Iv1.fe9d1fd8bb03a01a',
+            //     clientSecret: 'e8c9abaea1ffd30344923983e467e61a93f6a9cf',
+            //     repo: 'https://github.com/dearDairui/page/issues/1',
+            //     owner: 'dairui',
+            //     admin: ['deardairui'],
+            //     // facebook-like distraction free mode
+            //     distractionFreeMode: false
+            // })
         </script>
     </body>
 
