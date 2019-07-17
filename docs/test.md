@@ -6,7 +6,7 @@
 
 在实际项目开发中，我们经常发现自己写的代码拿到测试那边进行集成测试或者进行系统测试的时候会被提出很多的简单的 bug，而这些 bug 完全通过我们自己编写单元测试可以避免。下边就记录一下怎样进行单元测试。
 
-## 前端测试框架
+## 1.前端测试框架
 
 ### Jasmine
 
@@ -45,15 +45,20 @@
 
         string 参数用于命名规范集合，并将与 specs 连接以生成规范的全名。
 
+        Function 参数用于传递一个函数，函数内部的 it,expect 等方法用于判断
+
 4.  简单测试例子
+
     ```javascript
     describe("A suite", function() {
         //没有通过验证，会提示这个语句
         it("contains spec with an expectation", function() {
             //验证，期望是true
-            expect(true).toBe(true);
+            expect(true).toBe(true); //相等
+            //expect(this.foo).toEqual(0); //判断相等
+            //expect(true).not.toBe(); 不能为;
         });
     });
     ```
 
-## VUE 项目的测试
+## 2.VUE 项目的测试
