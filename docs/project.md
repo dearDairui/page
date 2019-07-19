@@ -47,7 +47,7 @@ myinput.addEventListener("invalid" ,invalidFun,false)
 
 监听键盘输入事件后直接使用正则进行检验，替代不合法输入
 
-### 3.直接上代码：
+### 3.自定义插件验证，直接上代码：
 
 ```javascript
 //数据校验
